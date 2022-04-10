@@ -1,5 +1,5 @@
 const parseArgs = require('yargs/yargs')
-const { print } = require("./util")
+const { print, errorAndExit } = require("./util")
 
 module.exports = async function () {
   const args = parseArgs(process.argv.slice(2))
@@ -30,7 +30,7 @@ module.exports = async function () {
       return total - num
     } else if (o == "d") {
       if (total == 0) {
-        return total
+        errorAndExit("No se puede dividir entre 0")
       }
 
       return total / num
