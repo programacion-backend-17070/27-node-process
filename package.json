@@ -1,0 +1,28 @@
+{
+  "name": "27-process",
+  "version": "1.0.0",
+  "description": "- Proceso principal de node.js - Como interactuamos con los argumentos que enviamos a un proceso de node - Dos librerias que nos ayudan a obtener los parametros en un objeto con un formato determinado - Que informacion obtenemos del objeto process - Como ejecutar procesos hijos desde un proceso principal - Variables de entorno",
+  "main": "index.js",
+  "scripts": {
+    "server-prod": "NODE_ENV=prod node ./src/server.js",
+    "server-dev": "node ./src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/programacion-backend-17070/27-node-process.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/programacion-backend-17070/27-node-process/issues"
+  },
+  "homepage": "https://github.com/programacion-backend-17070/27-node-process#readme",
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "minimist": "^1.2.6",
+    "nanospinner": "^1.1.0",
+    "yargs": "^17.4.1"
+  }
+}
